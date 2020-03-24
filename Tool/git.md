@@ -25,7 +25,7 @@
 `git commit -m "Message"` - 변경상황을 내 컴퓨터에 저장한다  
 만약 실수로 커밋했다면 수정 후에--amend flag 를 붙여주면 된다.
 
-`git push` - 깃허브에 업로드한다.
+`git push origin master` - 깃허브에 업로드한다.
 
 ### ➕ 파일 병합
 
