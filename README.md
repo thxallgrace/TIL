@@ -3,10 +3,12 @@
 
 ## Node 
 
+* [Serverless - 사용법과 활용](https://github.com/cjaewon/TIL/blob/master/Node/serverless.md)
 
 ## Go
-* [Speed - 고언어 속도 및 최적화](https://github.com/cjaewon/TIL/blob/master/go/performance.md)
+
+* [Performance - 고언어 속도 및 최적화](https://github.com/cjaewon/TIL/blob/master/go/performance.md)
 
 ## Tool
 
-* [Git - 사용법 정리](https://github.com/cjaewon/TIL/blob/master/Tool/git.md)
+* [Git - 명령어 및 사용법 정리](https://github.com/cjaewon/TIL/blob/master/Tool/git.md)
