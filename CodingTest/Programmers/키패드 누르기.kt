@@ -6,43 +6,47 @@ import kotlin.math.abs
     url     : https://programmers.co.kr/learn/courses/30/lessons/67256
  */
 
+import kotlin.math.abs
+
 class Solution {
     fun solution(numbers: IntArray, hand: String): String {
-        val keypads = mapOf("1" to "00", "2" to "01", "3" to "02",
-                            "4" to "10", "5" to "11", "6" to "12",
-                            "7" to "20", "8" to "21", "9" to "22",
-                            "*" to "30", "0" to "31", "#" to "32")
+        val keypads = mapOf(1 to Pair(0,0), 2 to Pair(0,1), 3 to Pair(0,2),
+                4 to Pair(1,0), 5 to Pair(1,1), 6 to Pair(1,2),
+                7 to Pair(2,0), 8 to Pair(2,1), 9 to Pair(2,2),
+                "*" to Pair(3,0), 0 to Pair(3,1), "#" to Pair(3,2))
 
-        val leftKeypads = listOf("1", "4", "7", "*")
-        val rightKeypads = listOf("3", "6", "9", "#")
-
-        var leftPosition = "*"
-        var rightPosition = "#"
+        var leftPosition = keypads["*"]
+        var rightPosition = keypads["#"]
 
         var answer = ""
         numbers.forEach { number ->
-            if (leftKeypads.contains(number.toString())) {
-                answer += "L"
-                leftPosition = number.toString()
-            } else if (rightKeypads.contains(number.toString())) {
-                answer += "R"
-                rightPosition = number.toString()
-            } else {
-                val currentHand = searchNumberHand(keypads[leftPosition]!!, keypads[rightPosition]!!, keypads[number.toString()]!!, hand == "right")
-                if (currentHand == 'R') {
-                    rightPosition = number.toString()
-                } else {
-                    leftPosition = number.toString()
+            when(number){
+                1, 4, 7 -> {
+                    answer += 'L'
+                    leftPosition = keypads[number]
                 }
-                answer += currentHand
+                3, 6, 9 -> {
+                    answer += 'R'
+                    rightPosition = keypads[number]
+                }
+                else ->{
+                    val currentHand = searchNumberHand(leftPosition!!, rightPosition!!, keypads[number]!!, hand == "right")
+                    if (currentHand == 'R') {
+                        rightPosition = keypads[number]
+                    } else {
+                        leftPosition = keypads[number]
+                    }
+                    answer += currentHand
+                }
+
             }
         }
         return answer
     }
 
-    fun searchNumberHand(left: String, right: String, target: String, isRightHand: Boolean): Char {
-        val leftMove = abs(left[0] - target[0]) + abs(left[1] - target[1])
-        val rightMove = abs(right[0] - target[0]) + abs(right[1] - target[1])
+    fun searchNumberHand(left: Pair<Int,Int>, right: Pair<Int,Int>, target: Pair<Int,Int>, isRightHand: Boolean): Char {
+        val leftMove = abs(left.first - target.first) + abs(left.second - target.second)
+        val rightMove = abs(right.first - target.first) + abs(right.second - target.second)
 
         if (leftMove == rightMove) {
             return if (isRightHand) 'R' else 'L'
@@ -50,4 +54,4 @@ class Solution {
 
         return if (leftMove > rightMove) 'R' else 'L'
     }
-}
+}}
