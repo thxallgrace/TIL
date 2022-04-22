@@ -4,3 +4,7 @@
 ## CodingTest
 
 * [Programmers](https://programmers.co.kr/learn/challenges)
+
+## Book
+
+* [노마드 개발자 북클럽](https://nomadcoders.co/challenges)
