@@ -8,12 +8,12 @@
 ## 토 | Assignment #02
 
 *  📚 추천사 ~ 1장. 깨끗한 코드
-*  ✔️ TIL
+*  ✔️ [TIL](https://github.com/thxallgrace/TIL/blob/master/Book/CleanCode/1%EC%A3%BC%EC%B0%A8/Assignment2.md)  
 
 ## 일 | Assignment #03
 
 *  📚 2장. 의미있는 이름
-*  ✔️ TIL
+*  ✔️ [TIL](https://github.com/thxallgrace/TIL/blob/master/Book/CleanCode/1%EC%A3%BC%EC%B0%A8/Assignment3.md)  
 
 ## 월 | Assignment #04
 
