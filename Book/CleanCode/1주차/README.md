@@ -18,7 +18,7 @@
 ## 월 | Assignment #04
 
 *  📚 복습
-*  ✔️ [미션 Mission (1)](https://github.com/thxallgrace/TIL_temp/blob/master/Book/CleanCode/1%EC%A3%BC%EC%B0%A8/Assignment4.md)
+*  ✔️ [미션 Mission (1)](https://github.com/thxallgrace/TIL/blob/main/Book/CleanCode/1%EC%A3%BC%EC%B0%A8/Assignment4.md)
 
 ## 화, 수 | Assignment #05
 
