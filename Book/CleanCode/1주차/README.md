@@ -23,7 +23,7 @@
 ## 화, 수 | Assignment #05
 
 *  📚 3장. 함수
-*  ✔️ TIL
+*  ✔️ [TIL](https://github.com/thxallgrace/TIL/blob/main/Book/CleanCode/1%EC%A3%BC%EC%B0%A8/Assignment5.md)
 
 ## 목, 금 | Assignment #06
 
